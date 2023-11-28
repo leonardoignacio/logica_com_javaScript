@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+</head>
+<body>
+    <script>
+        //Declação de variáveis/contantes: var | let | const
+        var nome, nota1, nota2, nota3, nota4, media;
+        //Entradas
+        //Toda a leitura de prompt é do tipo String(texto)
+        nome=prompt('Informe o nome do(a) aluno(a): ')
+        //Necessário a conversão de String para Float
+        nota1=parseFloat(prompt('Informe a 1º nota: '))
+        nota2=parseFloat(prompt('Informe a 2º nota: '))
+        nota3=parseFloat(prompt('Informe a 3º nota: '))
+        nota4=parseFloat(prompt('Informe a 4º nota: '))
+
+        //processamento
+        media = (nota1+nota2+nota3+nota4)/4
+
+        //Saída
+        document.write('A média de ', nome, ' é: ', media)
+        console.log('A média de ', nome, ' é: ', media)
+
+        /*
+            PORTUGOL | JAVASCRIPT
+            caractere: string
+            real: Float
+            inteiro: int      
+        */
+    </script>
+</body>
+</html>

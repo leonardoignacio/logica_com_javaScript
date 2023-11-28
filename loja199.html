@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de R$1,99</title>
+</head>
+<body>
+  
+    <script>
+        let codigo, descProduto, nome, quantidade, valorCompra
+        const preco = 1.99
+        document.write('<h1>Loja de R$1,99</h1><br>')
+        nome = prompt("Informe o nome do cliente: ")
+        codigo = prompt("Informe o códgio do produto: ")
+        descProduto = prompt("Informe a descrição do produto: ")
+        quantidade = parseInt(prompt("Informe a quantidade produto: "))
+        
+        valorCompra = preco * quantidade
+
+        document.write("<h2>Cliente</h2>")
+        document.write("<p>",nome, "</p>")
+        document.write("<h2>Produto</h2>")
+        document.write("<p><strong>Código:</strong> ",codigo, "</p>")
+        document.write("<p><strong>Descrição:</strong> ",descProduto, "</p>")
+        document.write("<p><strong>Quantidade:</strong> ", quantidade, "</p>")
+        document.write("<hr>")
+        document.write("<h3>Total:<small>R$", valorCompra.toFixed(2),"</small></h3>")
+
+
+    </script>
+</body>
+</html>
