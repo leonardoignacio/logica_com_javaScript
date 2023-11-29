@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         /*
@@ -14,22 +16,23 @@
             limite de 50kgs.
         */
 
-        let kg, multa=0, diferenca=0
-        const taxa=4, limite=50
+        let kg, multa = 0, diferenca = 0
+        const taxa = 4, limite = 50
         kg = parseFloat(prompt("Informe quantos Kgs de peixe: "))
-        if (kg >limite){
+        if (kg > limite) {
             diferenca = kg - limite
-            multa = diferenca*taxa
+            multa = diferenca * taxa
         }
         document.write(`<h1>Cálculo p/ Pescaria</h1>`)
         document.write(`<h2><b>A quantidade pescada foi:</b> ${kg.toFixed(2)}kg</h2>`)
         document.write(`<h2><b>A diferença entre o limite foi:</b> <small>${diferenca.toFixed(2)}</small></h2>`)
         document.write(`<h2><b>O valor de multa é:R$</b> <small>${multa.toFixed(2)}</small></h2>`)
-        
+
 
 
 
 
     </script>
 </body>
+
 </html>
